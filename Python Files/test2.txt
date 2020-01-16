@@ -1,0 +1,20 @@
+//Senior Project Test 2
+public class math{
+	static int a=1;
+	static short b=11156;
+	static long c= 1500;
+	static float d=10;
+	static double e=5.1865;
+	public static void main(String[] args){
+		System.out.println(a+b); //Output: 11157, type int
+		System.out.println(a+c);  //Output: 1501, type long
+		System.out.println(a+d); //Output: 11.0, type float
+		System.out.println(a+e); //Output: 6.1865, type double
+		System.out.println(b+c); //Output: 12656, type long
+		System.out.println(b+d); //Output: 11166.0, type float
+		System.out.println(b+e); //Output: 11161.1865, type double
+		System.out.println(c+d); //Output: 1510.0, type float
+		System.out.println(c+e); //Output: 1505.1865, type double
+		System.out.println(d+e); //Output: 15.1865, type double
+		}
+	}

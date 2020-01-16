@@ -1,0 +1,66 @@
+class Student
+{ 
+	private String name;
+	private int studentId;
+	private String email;
+	private double GPA;
+	
+	public Student(String name)
+	{
+		this.name = name;
+	}
+	public Student(String name, int studentId)
+	{
+		this.name = name;
+		this.studentId = studentId;
+		
+	}
+	public Student(String name, int studentId, String email)
+	{
+		this.name = name;
+		this.studentId = studentId;
+		this.email = email;
+	}
+	public Student(String name, int studentId, String email, double GPA)
+	{
+		this.name = name;
+		this.studentId = studentId;
+		this.email = email;
+		this.GPA = GPA;
+	}
+	
+	public void setName(String newName)
+	{
+		this.name = newName;
+	}
+	
+	public String getName()
+	{
+	return name;
+	}
+	
+	public void setGPA(double newGPA)
+	{
+		this.GPA = newGPA;
+	}
+	
+	public double getGPA()
+	{
+	return GPA;
+	}
+
+	public static void main (String args[]) 
+   	{ 
+		Student s1 = new Student("Tony", 1);
+		Student s2 = new Student("Jimmy", 2, "jimmyt@school.com", 2.6);
+		
+		System.out.println("Student 1 name is: " + s1.getName()); 
+		s1.setName("Anthony");
+		System.out.println("Student 1 new name is: " + s1.getName()); 
+		
+		System.out.println("Student 2 name is: " + s2.getName());
+		System.out.println("Student 2 GPA is: " + s2.getGPA());
+		s2.setGPA(3.6);
+		System.out.println("Student 2 new GPA is: " + s2.getGPA());
+   	}
+}
